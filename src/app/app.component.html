@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-10">
+            <h1>Hello World!</h1>
+            <router-outlet></router-outlet>
+            <hr>
+            <nav>
+              <a [routerLink]="['']">HOME</a>   
+                 
+              <input type="text" #id (input)="true" >
+              <a [routerLink]="['/user',id.value]">user</a>
+            </nav>
+        </div>
+    </div>
+</div>
